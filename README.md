@@ -22,41 +22,77 @@ account（）用于设置分数、累计学生的成绩之和、累计学生人�
 public class MyArray{
 
 public MyArray(int leng)
+
 {
+
 		if(leng<=0)
+		
 		{
+		
 			System.out.println("error length");
+			
     		System.exit(1);
+		
 }
+
     	alist=new int [leng];
+	
     	length=leng;
+	
     	System.out.println("MyArray 类对象已创建。");
+	
 }
+
 public void init()
+
 {
+
 		int i;
+		
 		for(i=0;i<length;i++)
+		
 		alist[i] = length - i;
+		
 }
+
 public void display()
+
 {
+
 		int i;
+		
 		System.print("MyArray中的元素为：");
+		
 		for(i=0;i<length;i++)
+		
 			System.out.print(“\t d”, alist[i]);
+			
 	System.out.println();
+	
 }
+
 protected int *alist;
+
 protected int length;
+
 }
+
 public class ArrayTest
+
 {
+
 public static void main()
+
 {
+
 		MyArray a = new MyArray(5);
+		
 		a.input();
+		
 		a.display();
+		
 }
+
 }
 
 
@@ -77,10 +113,15 @@ public static void main()
   9、给出下面的抽象基类container。
   
 abstract class Container{
+
 protected double radius;
+
 public Container(double radius);
+
 abstact double surface_area();
+
 abstract	double volume();
+
 };
 
   建立3个继承Container的派生类Cube、Sphere与Cylinder，让每一个派生类都包含抽象函数surface_area（）和volume（），分别用来计算正方体、球体和圆柱体的表面积及体积。
