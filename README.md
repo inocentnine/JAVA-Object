@@ -67,7 +67,7 @@ public void display()
 		
 			System.out.print(“\t d”, alist[i]);
 			
-	System.out.println();
+		System.out.println();
 	
 }
 
